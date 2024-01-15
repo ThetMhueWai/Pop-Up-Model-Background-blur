@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.content {
+    width: 500px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content-title {
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.popup-btn {
+    border: 0;
+    background-color: black;
+    color: white;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: 10px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.popup-btn:hover,
+.close:hover {
+    box-shadow: 0 0 0.325rem black;
+}
+
+.popup-model {
+    width: 300px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 0.325rem whitesmoke;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    visibility: collapse;
+    transition: 0.15s;
+}
+
+.model-title {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.close {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: inherit;
+    border-radius: 5px;
+}
+
+.content-active {
+    filter: blur(5px);
+    transition: 0.3s;
+}
+
+.popup-model-active {
+    top: 43%;
+    visibility: visible;
+    transition: 0.3s;
+}
